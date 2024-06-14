@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(136,48,179);
+    background: radial-gradient(circle, rgba(136,48,179,1) 0%, rgba(9,0,14,1) 76%);
+}
+.main-header {
+    font-style: bold;
+    font-size: 2.2em;
+    color:  #b673db;
+    margin: 20px 0;
+    position: relative;
+}
+.main-header::first-letter { 
+    font-weight: bold;
+    font-size: 300px;
+    color: #c898e3;
+}
+.intro-paragraph {
+    font-size: 1.5em;
+    color: #b869d7;
+    margin: 20px;
+    position: relative;
+}
+.cta-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #833ab4;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    position: relative;
+}
+.cta-button:active {
+    font-size: 10px;
+    background-color: #4a057e;
+}
+.main-header::before,
+.main-header::after {
+    content: '❅';
+    color: violet;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.main-header::before {
+    left: 20%;
+}
+.main-header::after {
+    right: 20%;
+}
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    color: #aa5ee3;
+    font-size: 2em;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+.intro-paragraph::before {
+    left: 25%;
+}
+.intro-paragraph::after {
+    right: 25%;
+}
+.cta-button::before,
+.cta-button::after {
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #DAA520;
+}
+.cta-button::before {
+    content: '→';
+    left: -25px;
+}
+.cta-button::after {
+    content: '←';
+    right: -25px;
+}
